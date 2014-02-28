@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Style Guide Template</title>
+
+        <style type="text/css">
+            #styleguide {
+                width: 300px;
+                margin: 20px auto;
+            }
+            @media screen and ( min-width: 768px )
+            {
+                #styleguide {
+                    width: 728px;
+                }
+            }
+            @media screen and ( min-width: 1024px )
+            {
+                #styleguide {
+                    width: 944px;
+                }
+            }
+            /* Sanity */
+            pre {
+                overflow: scroll;
+            }
+        </style>
+	</head>
+	<body>
+
+        <div id="styleguide">
+
+            <h1>Style Guide</h1>
+
+            <p>This document provides many of the common HTML elements found on a website. Use this template as a base to build a style guide with a customized CSS theme.</p>
+
+            <hr />
+
+            <h1 id="headings">Headings</h1>
+
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+
+            <hr />
+
+            <h1 id="paragraph">Paragraph</h1>
+
+            <img style="width:225px; height: 150px; float:right" src="http://placehold.it/225x150" alt="FPO Image" />
+            <p>Lorem ipsum dolor sit amet, <a href="#" title="test link">test link</a> adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
+
+            <p>Lorem ipsum dolor sit amet, <b>bold text</b>, <em>emphasis</em> consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
+
+            <hr />
+
+            <h1 id="list-types">List Types</h1>
+
+            <h3>Definition List</h3>
+            <dl>
+                <dt>Definition List Term</dt>
+                <dd>This is a definition list description.</dd>
+            </dl>
+
+            <h3>Ordered List</h3>
+            <ol>
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+            </ol>
+
+            <h3>Unordered List</h3>
+            <ul>
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+            </ul>
+
+            <hr />
+
+            <h1 id="form-elements">Fieldsets, Legends, and Form Elements</h1>
+
+            <fieldset>
+
+                <legend>Legend</legend>
+                
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.</p>
+                
+                <form>
+                    <h2>Form Element</h2>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui.</p>
+                    
+                    <p><label for="text-field">Text Field:</label><br />
+                    <input type="text" id="text-field" /></p>
+                    
+                    <p><label for="text-area">Text Area:</label><br />
+                    <textarea id="text-area"></textarea></p>
+                    
+                    <p><label for="select-element">Select Element:</label><br />
+                        <select name="select-element">
+                        <optgroup label="Option Group 1">
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </optgroup>
+                        <optgroup label="Option Group 2">
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </optgroup>
+                    </select></p>
+                    
+                    <p><label for="radio-buttons">Radio Buttons:</label><br />
+                        <input type="radio" class="radio" name="radio-button" value="radio-1" /> Radio 1<br/>
+                            <input type="radio" class="radio" name="radio-button" value="radio-2" /> Radio 2<br/>
+                            <input type="radio" class="radio" name="radio-button" value="radio-3" /> Radio 3<br/>
+                    </p>
+                    
+                    <p><label for="checkboxes">Checkboxes:</label><br />
+                        <input type="checkbox" class="checkbox" name="checkboxes" value="check-1" /> Radio 1<br/>
+                            <input type="checkbox" class="checkbox" name="checkboxes" value="check-2" /> Radio 2<br/>
+                            <input type="checkbox" class="checkbox" name="checkboxes" value="check-3" /> Radio 3<br/>
+                    </p>
+                    
+                    <p><label for="password">Password:</label><br />
+                        <input type="password" class="password" name="password" />
+                    </p>
+                    
+                    <p><label for="file">File Input:</label><br />
+                        <input type="file" class="file" name="file" />
+                    </p>
+
+                    <p>
+                        <label for="mycolor">Color:</label><br />
+                        <input type="color" name="mycolor">
+                    </p>
+
+                    <p>
+                        <label for="mydate">Date:</label><br />
+                        <input type="date" name="mydate">
+                    </p>
+
+                    <p>
+                        <label for="mydatetimelocal">Date &amp; Time (Local):</label><br />
+                        <input type="datetime-local" name="mydatetimelocal">
+                    </p>
+
+                    <p>
+                        <label for="mymonth">Month:</label><br />
+                        <input type="month" name="mymonth">
+                    </p>
+
+                    <p>
+                        <label for="mytime">Time:</label><br />
+                        <input type="time" name="mytime">
+                    </p>
+
+
+                    <p>
+                        <label for="mynumber">Number:</label><br />
+                        <input type="number" name="mynumber" min="1" max="5">
+                    </p>
+
+                    <p>
+                        <label for="myrange">Range:</label><br />
+                        <input type="range" name="points" min="1" max="10">
+                    </p>
+
+                    <p>
+                        <label for="mytel">Telephone:</label><br />
+                        <input type="tel" name="mytel">
+                    </p>
+
+                    <p>
+                        <label for="myurl">URL:</label><br />
+                        <input type="url" name="myurl">
+                    </p>
+                    
+                    <h2>Buttons</h2>
+                    
+                    <p>
+                        <input class="button" type="reset" value="Clear Form" />&nbsp;
+                        <input class="button" type="submit" value="Submit Form" />&nbsp;
+                        <button type="button">A Basic Button</button>&nbsp;
+                        <button type="button" disabled="disabled">Disabled Button</button>
+                    </p>
+                    
+                </form>
+                
+            </fieldset>
+
+            <hr />
+
+            <h1 id="tables">Tables</h1>
+
+            <table cellspacing="0" cellpadding="0">
+                <tr>
+                    <th>Table Header 1</th><th>Table Header 2</th><th>Table Header 3</th>
+                </tr>
+                <tr>
+                    <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+                </tr>
+                <tr class="even">
+                    <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+                </tr>
+                <tr>
+                    <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+                </tr>
+
+            </table>
+
+            <hr />
+
+            <h1 id="media">Media</h1>
+
+            <p><audio controls></audio></p>
+            <p><video controls></video></p>
+
+            <hr />
+
+            <h1 id="misc">Misc - abbr, acronym, pre, code, sub, sup, etc.</h1>
+
+            <p>Lorem <sup>superscript</sup> dolor <sub>subscript</sub> amet. <cite>cite</cite>. Consectetuer adipiscing elit. Nullam dignissim convallis est. Praesent mattis, <code>var foobar = function() { return; }</code> massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. <acronym title="National Basketball Association">NBA</acronym> Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.  <abbr title="Avenue">AVE</abbr></p>
+
+            <pre>
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est.
+    Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. 
+    Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. 
+    Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
+            </pre>
+
+            <blockquote>
+                "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus." <br />&mdash; Blockquote
+            </blockquote>
+
+            <hr />
+
+        </div>
+	</body>
+</html>
+
